@@ -219,6 +219,40 @@ function exercicio13(){
 - Calcular a média dos salários
 - Se a média for maior que 3000 apresentar mensagem Salários acima da média
 - Senão apresentar mensagem Salários dentro da média
+*/
+function exercicio14(){
+    let indice = 0
+    let maiorSalario = 0
+    let menorSalario = 9999999999999999999999
+    let soma = 0
+
+    while(indice < 5){
+        let salario = parseFloat(prompt("Digite o salario"))
+        soma = soma + salario
+        if(salario > maiorSalario){
+            maiorSalario = salario
+        }
+        if(menorSalario > salario){
+            menorSalario = salario
+        }
+        indice = indice + 1
+    }
+
+
+    let media = soma / 5
+
+    alert("Maior salario é: " + maiorSalario +
+        "\nMenor salario é: " + menorSalario +
+        "\nMedia: " + media 
+    )
+    if(media > 3000){
+        alert(" Salários acima da média")
+    }
+    else{
+        alert("Salários dentro da média")
+    }
+}
+/*
 
 15. Criar uma função exercicio15()
 - Solicitar 4 valores de contas (água, luz, internet, aluguel) utilizando enquanto
@@ -227,44 +261,205 @@ function exercicio13(){
 - Se o total das contas for maior que 50% da renda apresentar mensagem Orçamento comprometido
 - Senão apresentar mensagem Orçamento saudável
 - Apresentar o total das contas e o percentual que representa da renda
+*/
+function exercicio15(){
+    let indice = 0
+    let totalContas = 0
 
+    while(indice < 4){
+        let conta = parseFloat(prompt("Digite o valor da conta"))
+        totalContas = totalContas + conta
+        indice = indice + 1
+    }
+    let renda = parseFloat(prompt("Digite sua renda mensal"))
+    let metade = renda / 2
+    if(totalContas > metade){
+        alert("Orçamento comprometido")
+    }
+    else{
+        alert("Orçamento saudavel")
+    }
+    let porcentagem = (totalContas/renda)*100
+
+    alert("Total das contas: " + totalContas +
+        "\nPorcentagem do valor das contas: " + porcentagem + "%"
+    )
+}
+/*
 16. Criar uma função exercicio16()
 - Solicitar a altura de 5 pessoas
 - Descobrir e armazenar a maior altura utilizando while
 - Apresentar a maior altura informada
+*/
+function exercicio16(){
+    let indice = 0
+    let maiorAltura = 0
 
+    while(indice < 5){
+        let altura = parseInt(prompt("Digite a altura em cm"))
+        indice = indice + 1
+        if(altura > maiorAltura){
+            maiorAltura = altura
+        }
+    }
+    alert("A maior altura é: " + maiorAltura)
+}
+/*
 17. Criar uma função exercicio17()
 - Solicitar o peso de 4 pessoas
 - Descobrir e armazenar o menor peso utilizando while
 - Apresentar o menor peso informado
+*/
+function exercicio17(){
+    let indice = 0
+    let menorPeso = 999999999
 
+    while(indice < 4){
+        let peso = parseFloat(prompt("Digite o peso"))
+        indice = indice + 1
+        if(peso < menorPeso){
+            menorPeso = peso
+        }
+    }
+    alert("Menor peso é: " + menorPeso)
+}
+/*
 18. Criar uma função exercicio18()
 - Solicitar o nome e a idade de 5 pessoas
 - Descobrir quem possui a maior idade utilizando while
 - Apresentar o nome da pessoa e a idade dela
+*/
+function exercicio18(){
+    let indice = 0
+    let maiorIdade = 0
+    let nomeMaiorIdade = ""
 
+    while(indice < 5){
+        let nome = prompt("Digite o nome")
+        let idade = parseInt(prompt("Digite a idade"))
+
+        if(idade > maiorIdade){
+            nomeMaiorIdade = nome
+            maiorIdade = idade
+        }
+
+        indice = indice + 1
+    }
+
+    alert("Nome da pessoa com a maior idade é: " + nomeMaiorIdade +
+        "\nMaior idade é: " + maiorIdade
+    )
+}
+/*
 19. Criar uma função exercicio19()
 - Solicitar o preço de 6 produtos
 - Descobrir o maior preço utilizando while
 - Descobrir o menor preço utilizando while
 - Apresentar o maior e o menor preço informados
+*/
+function exercicio19(){
+    let indice = 0
+    let maiorPreco = 0
+    let menorPreco = 999999999999999999999999999
 
+    while(indice < 6){
+        let preco = parseFloat(prompt("Digite o preço"))
+        indice = indice + 1
+
+        if(preco > maiorPreco){
+            maiorPreco = preco
+        }
+
+        if(preco < menorPreco){
+            menorPreco = preco
+        }
+    }
+
+    alert("O menor preço é: " + menorPreco +
+        "\nO maior preço é " + maiorPreco
+    )
+}
+/*
 20. Criar uma função exercicio20()
 - Solicitar o nome e o valor do salário de 4 colaboradores
 - Descobrir qual colaborador tem o maior salário utilizando while
 - Apresentar o nome do colaborador e o salário dele
+*/
+function exercicio20(){
+    let indice = 0
+    let maiorSalario = 0
+    let nomeMaiorSalario = ""
 
+    while(indice < 4){
+        let nome = prompt("Digite o nome do funcionario")
+        let salario = parseFloat(prompt("Digite o salario"))
+
+        if(salario > maiorSalario){
+            maiorSalario = salario
+            nomeMaiorSalario = nome
+        }
+        indice = indice + 1
+    }
+
+    alert("O nome da pessoa com o maior salario é: " + nomeMaiorSalario +
+        "\nSalrio: " + maiorSalario
+    )
+}
+/*
 21. Criar uma função exercicio21()
 - Solicitar a temperatura de 7 dias
 - Descobrir a maior temperatura utilizando while
 - Descobrir a menor temperatura utilizando while
 - Apresentar a maior e a menor temperatura informadas
+*/
+function exercicio21(){
+    let indice = 0
+    let maiorTemperatura = 0
+    let menorTemperatura = 99999999
 
+    while(indice < 7){
+        let temperatura = parseInt(prompt("Digite a temperatura"))
+
+        if(temperatura > maiorTemperatura){
+            maiorTemperatura = temperatura
+        }
+
+        if(temperatura < menorTemperatura){
+            menorTemperatura = temperatura
+        }
+
+        indice = indice + 1
+    }
+    alert("A maior temperatura foi: " + maiorTemperatura +
+        "\nA menor temperatura foi: " + menorTemperatura
+    )
+}
+/*
 22. Criar uma função exercicio22()
 - Solicitar o nome e o preço de 5 produtos
 - Descobrir qual produto tem o menor preço utilizando while
 - Apresentar o nome do produto e o preço dele
+*/
+function exercicio22(){
+    let indice = 0
+    let nomeMenorPreco = ""
+    let menorPreco = 999999999999999999999
 
+    while(indice < 5){
+        let nome = prompt("Digite o nome do produto")
+        let preco = parseFloat(prompt("Digite o preço do produto"))
+
+        if(preco < menorPreco){
+            nomeMenorPreco = nome
+            menorPreco = preco
+        }
+        indice = indice + 1
+    }
+    alert("O produto com menor preço é: " + nomeMenorPreco +
+        "\nPreço: R$" + menorPreco 
+    )
+}
+/*
 23. Criar uma função exercicio23()
 - Solicitar a idade de 8 pessoas
 - Contar quantas são crianças (idade < 12)
@@ -272,21 +467,106 @@ function exercicio13(){
 - Contar quantas são adultos (18 a 59)
 - Contar quantas são idosos (60 ou mais)
 - Apresentar a quantidade em cada categoria
+*/
+function exercicio23(){
+    let indice = 0
+    let crianças = 0
+    let adolescentes = 0
+    let adultos = 0
+    let idosos = 0
 
+    while(indice < 8){
+        let idade = parseInt(prompt("Digite a idade"))
+
+        if(idade < 12){
+            crianças = crianças + 1
+        }
+        else if(idade >= 12 && idade < 18){
+            adolescentes = adolescentes + 1
+        }
+        else if(idade >= 18 && idade < 60){
+            adultos = adultos + 1
+        }
+        else{
+            idosos = idosos + 1
+        }
+        indice = indice + 1
+    }
+
+    alert("Numero de crianças: " + crianças +
+        "\nNumero de adolescentes: " + adolescentes +
+        "\nNumero de adultos: " + adultos + 
+        "\nNumero de idosos: " + idosos
+    )
+}
+/*
 24. Criar uma função exercicio24()
 - Solicitar a nota de 10 alunos
 - Contar quantos alunos estão Reprovados (nota < 5)
 - Contar quantos alunos estão em Recuperação (nota >= 5 e < 7)
 - Contar quantos alunos estão Aprovados (nota >= 7)
 - Apresentar a quantidade de Reprovados, Recuperação e Aprovados
+*/
+function exercicio24(){
+    let indice = 0
+    let reprovado = 0
+    let recuperacao = 0
+    let aprovado = 0
 
+    while(indice < 10){
+        let nota = parseFloat(prompt("Digite a nota do aluno"))
+
+        if(nota < 5){
+            reprovado = reprovado + 1
+        }
+        else if(nota >= 5 && nota < 7){
+            recuperacao = recuperacao + 1
+        }
+        else if(nota >= 7){
+            aprovado = aprovado + 1
+        }
+        indice = indice + 1
+    }
+    alert("Numero de alunos reprovados: " + reprovado + 
+        "\nNumero de alunos em recuperação: " + recuperacao +
+        "\nNumero de alunos aprovados: " + aprovado
+    )
+    
+}
+/*
 25. Criar uma função exercicio25()
 - Solicitar o salário de 7 colaboradores
 - Contar quantos ganham até 2000
 - Contar quantos ganham entre 2001 e 5000
 - Contar quantos ganham acima de 5000
 - Apresentar a quantidade de colaboradores em cada faixa salarial
+*/
+function exercicio25(){
+    let indice = 0
+    let salrioBaixo = 0
+    let salarioMedio = 0
+    let salarioBom = 0
 
+    while(indice < 7){
+        let salario = parseFloat(prompt("Digite o salario"))
+
+        if(salario <= 2000){
+            salrioBaixo = salrioBaixo + 1
+        }
+        else if(salario > 2000 && salario < 5000){
+            salarioMedio = salarioMedio + 1
+        }
+        else{
+            salarioBom = salarioBom + 1
+        }
+        indice = indice + 1
+    }
+    alert("Numero de pessoas com salario menor que 2000: " + salrioBaixo +
+        "\nNumero de pessoas com salario entre 2000 e 5000: " + salarioMedio +
+        "\nNumero de pessoas com salario maior que 5000: " + salarioBom
+    )
+}
+/*
 26. Criar uma função exercicio26()
 - Solicitar a temperatura de 6 dias
 - Contar quantos dias foram Frios (temperatura < 15)
