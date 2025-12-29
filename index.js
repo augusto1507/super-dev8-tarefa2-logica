@@ -7,20 +7,20 @@
 
 
 */
-function exercicio06(){
+function exercicio06() {
     let indice = 0
     let soma = 0
 
-    while(indice < 5){
+    while (indice < 5) {
         let numero = parseInt(prompt("Digite um numero"))
         soma = soma + numero
         indice = indice + 1
     }
 
-    let media = soma /3
+    let media = soma / 3
 
     alert("Soma: " + soma +
-    "\nMedia: " + media
+        "\nMedia: " + media
 
     )
 }
@@ -33,11 +33,11 @@ function exercicio06(){
 
 
 */
-function exercicio07(){
+function exercicio07() {
     let indice = 0
     let total = 0
 
-    while(indice < 6){
+    while (indice < 6) {
         let valor = parseFloat(prompt("Digite o valor do produto"))
         total = total + valor
         indice = indice + 1
@@ -56,18 +56,18 @@ function exercicio07(){
 - Apresentar se o número é ímpar
 
 */
-function exercicio08(){
+function exercicio08() {
     let indice = 0
 
-    while(indice < 10){
+    while (indice < 10) {
         let numero = parseInt(prompt("Digite um numero"))
-        if( numero % 2 ===0){
+        if (numero % 2 === 0) {
             alert("O numero é par")
         }
         else {
             alert("O numero é impar")
         }
-        indice= indice + 1
+        indice = indice + 1
     }
 }
 /*
@@ -84,11 +84,11 @@ function exercicio08(){
 
 */
 
-function exercicio09(){
+function exercicio09() {
     let indice = 0
     let numero = parseInt(prompt("Digite um numero"))
 
-    while(indice <= 10){
+    while (indice <= 10) {
         let tabuada = numero * indice
         alert(numero + " X " + indice + " = " + tabuada)
         indice = indice + 1
@@ -103,17 +103,17 @@ function exercicio09(){
 - Apresentar a quantidade de números ímpares
 
 */
-function exercicio10(){
+function exercicio10() {
     let indice = 0
     let quantidadePar = 0
     let quantidadeImpar = 0
 
-    while( indice < 10){
+    while (indice < 10) {
         let numero = parseInt(prompt("Digite um numero"))
-        if( numero % 2 === 0){
+        if (numero % 2 === 0) {
             quantidadePar = quantidadePar + 1
         }
-        else{
+        else {
             quantidadeImpar = quantidadeImpar + 1
         }
         indice = indice + 1
@@ -133,21 +133,21 @@ function exercicio10(){
 - Senão apresentar Reprovado
 
  */
-function exercicio11(){
+function exercicio11() {
     let indice = 0
-    let soma = 0 
-    
-    while(indice < 4){
+    let soma = 0
+
+    while (indice < 4) {
         let nota = parseFloat(prompt("Digite a nota"))
         soma = soma + nota
         indice = indice + 1
     }
 
     let media = soma / 4
-    if(media >= 7){
+    if (media >= 7) {
         alert("Aprovado")
     }
-    else{
+    else {
         alert("Reprovado")
     }
 }
@@ -162,21 +162,21 @@ function exercicio11(){
 - Apresentar o valor final com desconto (se houver)
 
 */
-function exercicio12(){
+function exercicio12() {
     let indice = 0
     let total = 0
-    while(indice < 5){
+    while (indice < 5) {
         let valor = parseFloat(prompt("digite o valor do produto"))
         total = total + valor
         indice = indice + 1
     }
-    if(total > 200){
+    if (total > 200) {
         let desconto = total * 0.90
         alert("Total: " + total +
             "\nTotal com desconto: " + desconto
         )
     }
-    else{
+    else {
         alert("Total: " + total)
     }
 }
@@ -190,10 +190,10 @@ function exercicio12(){
 - Senão apresentar Menor de idade
 
 */
-function exercicio13(){
+function exercicio13() {
     let indice = 0
     let soma = 0
-    while(indice < 6){
+    while (indice < 6) {
         let idade = parseInt(prompt("Digite a idade"))
         soma = soma + idade
         indice = indice + 1
@@ -202,10 +202,10 @@ function exercicio13(){
     let media = soma / 6
     alert("Media das idades: " + media)
 
-    if(media >= 18){
+    if (media >= 18) {
         alert("Maior de idade")
     }
-    else{
+    else {
         alert("Menor de idade")
     }
 }
@@ -220,19 +220,19 @@ function exercicio13(){
 - Se a média for maior que 3000 apresentar mensagem Salários acima da média
 - Senão apresentar mensagem Salários dentro da média
 */
-function exercicio14(){
+function exercicio14() {
     let indice = 0
     let maiorSalario = 0
     let menorSalario = 9999999999999999999999
     let soma = 0
 
-    while(indice < 5){
+    while (indice < 5) {
         let salario = parseFloat(prompt("Digite o salario"))
         soma = soma + salario
-        if(salario > maiorSalario){
+        if (salario > maiorSalario) {
             maiorSalario = salario
         }
-        if(menorSalario > salario){
+        if (menorSalario > salario) {
             menorSalario = salario
         }
         indice = indice + 1
@@ -243,12 +243,12 @@ function exercicio14(){
 
     alert("Maior salario é: " + maiorSalario +
         "\nMenor salario é: " + menorSalario +
-        "\nMedia: " + media 
+        "\nMedia: " + media
     )
-    if(media > 3000){
+    if (media > 3000) {
         alert(" Salários acima da média")
     }
-    else{
+    else {
         alert("Salários dentro da média")
     }
 }
@@ -262,24 +262,24 @@ function exercicio14(){
 - Senão apresentar mensagem Orçamento saudável
 - Apresentar o total das contas e o percentual que representa da renda
 */
-function exercicio15(){
+function exercicio15() {
     let indice = 0
     let totalContas = 0
 
-    while(indice < 4){
+    while (indice < 4) {
         let conta = parseFloat(prompt("Digite o valor da conta"))
         totalContas = totalContas + conta
         indice = indice + 1
     }
     let renda = parseFloat(prompt("Digite sua renda mensal"))
     let metade = renda / 2
-    if(totalContas > metade){
+    if (totalContas > metade) {
         alert("Orçamento comprometido")
     }
-    else{
+    else {
         alert("Orçamento saudavel")
     }
-    let porcentagem = (totalContas/renda)*100
+    let porcentagem = (totalContas / renda) * 100
 
     alert("Total das contas: " + totalContas +
         "\nPorcentagem do valor das contas: " + porcentagem + "%"
@@ -291,14 +291,14 @@ function exercicio15(){
 - Descobrir e armazenar a maior altura utilizando while
 - Apresentar a maior altura informada
 */
-function exercicio16(){
+function exercicio16() {
     let indice = 0
     let maiorAltura = 0
 
-    while(indice < 5){
+    while (indice < 5) {
         let altura = parseInt(prompt("Digite a altura em cm"))
         indice = indice + 1
-        if(altura > maiorAltura){
+        if (altura > maiorAltura) {
             maiorAltura = altura
         }
     }
@@ -310,14 +310,14 @@ function exercicio16(){
 - Descobrir e armazenar o menor peso utilizando while
 - Apresentar o menor peso informado
 */
-function exercicio17(){
+function exercicio17() {
     let indice = 0
     let menorPeso = 999999999
 
-    while(indice < 4){
+    while (indice < 4) {
         let peso = parseFloat(prompt("Digite o peso"))
         indice = indice + 1
-        if(peso < menorPeso){
+        if (peso < menorPeso) {
             menorPeso = peso
         }
     }
@@ -329,16 +329,16 @@ function exercicio17(){
 - Descobrir quem possui a maior idade utilizando while
 - Apresentar o nome da pessoa e a idade dela
 */
-function exercicio18(){
+function exercicio18() {
     let indice = 0
     let maiorIdade = 0
     let nomeMaiorIdade = ""
 
-    while(indice < 5){
+    while (indice < 5) {
         let nome = prompt("Digite o nome")
         let idade = parseInt(prompt("Digite a idade"))
 
-        if(idade > maiorIdade){
+        if (idade > maiorIdade) {
             nomeMaiorIdade = nome
             maiorIdade = idade
         }
@@ -357,20 +357,20 @@ function exercicio18(){
 - Descobrir o menor preço utilizando while
 - Apresentar o maior e o menor preço informados
 */
-function exercicio19(){
+function exercicio19() {
     let indice = 0
     let maiorPreco = 0
     let menorPreco = 999999999999999999999999999
 
-    while(indice < 6){
+    while (indice < 6) {
         let preco = parseFloat(prompt("Digite o preço"))
         indice = indice + 1
 
-        if(preco > maiorPreco){
+        if (preco > maiorPreco) {
             maiorPreco = preco
         }
 
-        if(preco < menorPreco){
+        if (preco < menorPreco) {
             menorPreco = preco
         }
     }
@@ -385,16 +385,16 @@ function exercicio19(){
 - Descobrir qual colaborador tem o maior salário utilizando while
 - Apresentar o nome do colaborador e o salário dele
 */
-function exercicio20(){
+function exercicio20() {
     let indice = 0
     let maiorSalario = 0
     let nomeMaiorSalario = ""
 
-    while(indice < 4){
+    while (indice < 4) {
         let nome = prompt("Digite o nome do funcionario")
         let salario = parseFloat(prompt("Digite o salario"))
 
-        if(salario > maiorSalario){
+        if (salario > maiorSalario) {
             maiorSalario = salario
             nomeMaiorSalario = nome
         }
@@ -412,19 +412,19 @@ function exercicio20(){
 - Descobrir a menor temperatura utilizando while
 - Apresentar a maior e a menor temperatura informadas
 */
-function exercicio21(){
+function exercicio21() {
     let indice = 0
     let maiorTemperatura = 0
     let menorTemperatura = 99999999
 
-    while(indice < 7){
+    while (indice < 7) {
         let temperatura = parseInt(prompt("Digite a temperatura"))
 
-        if(temperatura > maiorTemperatura){
+        if (temperatura > maiorTemperatura) {
             maiorTemperatura = temperatura
         }
 
-        if(temperatura < menorTemperatura){
+        if (temperatura < menorTemperatura) {
             menorTemperatura = temperatura
         }
 
@@ -440,23 +440,23 @@ function exercicio21(){
 - Descobrir qual produto tem o menor preço utilizando while
 - Apresentar o nome do produto e o preço dele
 */
-function exercicio22(){
+function exercicio22() {
     let indice = 0
     let nomeMenorPreco = ""
     let menorPreco = 999999999999999999999
 
-    while(indice < 5){
+    while (indice < 5) {
         let nome = prompt("Digite o nome do produto")
         let preco = parseFloat(prompt("Digite o preço do produto"))
 
-        if(preco < menorPreco){
+        if (preco < menorPreco) {
             nomeMenorPreco = nome
             menorPreco = preco
         }
         indice = indice + 1
     }
     alert("O produto com menor preço é: " + nomeMenorPreco +
-        "\nPreço: R$" + menorPreco 
+        "\nPreço: R$" + menorPreco
     )
 }
 /*
@@ -468,26 +468,26 @@ function exercicio22(){
 - Contar quantas são idosos (60 ou mais)
 - Apresentar a quantidade em cada categoria
 */
-function exercicio23(){
+function exercicio23() {
     let indice = 0
     let crianças = 0
     let adolescentes = 0
     let adultos = 0
     let idosos = 0
 
-    while(indice < 8){
+    while (indice < 8) {
         let idade = parseInt(prompt("Digite a idade"))
 
-        if(idade < 12){
+        if (idade < 12) {
             crianças = crianças + 1
         }
-        else if(idade >= 12 && idade < 18){
+        else if (idade >= 12 && idade < 18) {
             adolescentes = adolescentes + 1
         }
-        else if(idade >= 18 && idade < 60){
+        else if (idade >= 18 && idade < 60) {
             adultos = adultos + 1
         }
-        else{
+        else {
             idosos = idosos + 1
         }
         indice = indice + 1
@@ -495,7 +495,7 @@ function exercicio23(){
 
     alert("Numero de crianças: " + crianças +
         "\nNumero de adolescentes: " + adolescentes +
-        "\nNumero de adultos: " + adultos + 
+        "\nNumero de adultos: " + adultos +
         "\nNumero de idosos: " + idosos
     )
 }
@@ -507,31 +507,31 @@ function exercicio23(){
 - Contar quantos alunos estão Aprovados (nota >= 7)
 - Apresentar a quantidade de Reprovados, Recuperação e Aprovados
 */
-function exercicio24(){
+function exercicio24() {
     let indice = 0
     let reprovado = 0
     let recuperacao = 0
     let aprovado = 0
 
-    while(indice < 10){
+    while (indice < 10) {
         let nota = parseFloat(prompt("Digite a nota do aluno"))
 
-        if(nota < 5){
+        if (nota < 5) {
             reprovado = reprovado + 1
         }
-        else if(nota >= 5 && nota < 7){
+        else if (nota >= 5 && nota < 7) {
             recuperacao = recuperacao + 1
         }
-        else if(nota >= 7){
+        else if (nota >= 7) {
             aprovado = aprovado + 1
         }
         indice = indice + 1
     }
-    alert("Numero de alunos reprovados: " + reprovado + 
+    alert("Numero de alunos reprovados: " + reprovado +
         "\nNumero de alunos em recuperação: " + recuperacao +
         "\nNumero de alunos aprovados: " + aprovado
     )
-    
+
 }
 /*
 25. Criar uma função exercicio25()
@@ -541,22 +541,22 @@ function exercicio24(){
 - Contar quantos ganham acima de 5000
 - Apresentar a quantidade de colaboradores em cada faixa salarial
 */
-function exercicio25(){
+function exercicio25() {
     let indice = 0
     let salrioBaixo = 0
     let salarioMedio = 0
     let salarioBom = 0
 
-    while(indice < 7){
+    while (indice < 7) {
         let salario = parseFloat(prompt("Digite o salario"))
 
-        if(salario <= 2000){
+        if (salario <= 2000) {
             salrioBaixo = salrioBaixo + 1
         }
-        else if(salario > 2000 && salario < 5000){
+        else if (salario > 2000 && salario < 5000) {
             salarioMedio = salarioMedio + 1
         }
-        else{
+        else {
             salarioBom = salarioBom + 1
         }
         indice = indice + 1
@@ -573,28 +573,124 @@ function exercicio25(){
 - Contar quantos dias foram Agradáveis (temperatura entre 15 e 25)
 - Contar quantos dias foram Quentes (temperatura > 25)
 - Apresentar a quantidade de dias Frios, Agradáveis e Quentes
-
+*/
+function exercicio26() {
+    let indice = 0
+    let frio = 0
+    let agradavel = 0
+    let quente = 0
+    while (indice < 6) {
+        let temperatura = parseInt(prompt("Digite a temperatura do dia em celsius"))
+        if (temperatura < 15) {
+            frio = frio + 1
+        }
+        else if (temperatura > 14 && temperatura < 26) {
+            agradavel = agradavel + 1
+        }
+        else {
+            quente = quente + 1
+        }
+        indice = indice + 1
+    }
+    alert("Dias frio: " + frio +
+        "\nDias agradaveis: " + agradavel +
+        "\nDias quentes: " + quente
+    )
+}
+/*
 27. Criar uma função exercicio27()
 - Solicitar a avaliação de 10 clientes (1 a 5)
 - Contar quantas avaliações foram Ruim (1 ou 2)
 - Contar quantas avaliações foram Regular (3)
 - Contar quantas avaliações foram Bom (4 ou 5)
 - Apresentar a quantidade de respostas Ruim, Regular e Bom
-
+*/
+function exercicio27() {
+    let indice = 0
+    let ruin = 0
+    let regular = 0
+    let bom = 0
+    while (indice < 10) {
+        let nota = parseInt(prompt("Digite a nota de 1 a 5"))
+        if (nota > 0 && nota < 3) {
+            ruin = ruin + 1
+        }
+        else if (nota === 3) {
+            regular = regular + 1
+        }
+        else if (nota > 3 && nota < 6) {
+            bom = bom + 1
+        }
+        indice = indice + 1
+    }
+    alert("Avalições ruin: " + ruin +
+        "\nAvaliações regulares: " + regular +
+        "\nAvaliações boas: " + bom
+    )
+}
+/*
 28. Criar uma função exercicio28()
 - Solicitar 8 números inteiros
 - Contar quantos números são negativos
 - Contar quantos números são iguais a zero
 - Contar quantos números são positivos
 - Apresentar a quantidade de números negativos, iguais a zero e positivos
-
+*/
+function exercicio28() {
+    let indice = 0
+    let negativos = 0
+    let zero = 0
+    let positivos = 0
+    while (indice < 8) {
+        indice = indice + 1
+        let numero = parseInt(prompt("digite um numero inteiro"))
+        if (numero < 0) {
+            negativos = negativos + 1
+        }
+        else if (numero === 0) {
+            zero = zero + 1
+        }
+        else {
+            positivos = positivos + 1
+        }
+    }
+    alert("Numeros negativos: " + negativos +
+        "\nNumeros igual a zero: " + zero +
+        "\nNumeros positivos: " + positivos
+    )
+}
+/*
 29. Criar uma função exercicio29()
 - Solicitar o peso de 5 encomendas
 - Contar quantas são Leves (peso < 2 kg)
 - Contar quantas são Médias (peso entre 2 e 10 kg)
 - Contar quantas são Pesadas (peso > 10 kg)
 - Apresentar a quantidade de encomendas Leves, Médias e Pesadas
-
+*/
+function exercicio29() {
+    let indice = 0
+    let leve = 0
+    let medio = 0
+    let pesado = 0
+    while (indice < 5) {
+        indice = indice + 1
+        let peso = parseInt(prompt("Digite o peso da encomenda em kg"))
+        if (peso < 3) {
+            leve = leve + 1
+        }
+        else if (peso > 10) {
+            pesado = pesado + 1
+        }
+        else {
+            medio = medio + 1
+        }
+    }
+    alert("Encomendas leves: " + leve +
+        "\nEncomendas medias: " + medio +
+        "\nEncomendas pesadas: " + pesado
+    )
+}
+/*
 30. Criar uma função exercicio30()
 - Solicitar a quantidade de pelúcias da Disney que deseja cadastrar
 - Para cada pelúcia, solicitar o personagem [MICKEY/MINNIE/DONALD]
