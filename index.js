@@ -698,7 +698,33 @@ function exercicio29() {
 - Contar quantas pelúcias são da Minnie
 - Contar quantas pelúcias são do Donald
 - Apresentar o resumo das pelúcias cadastradas por personagem
+*/
+function exercicio30() {
+    let quantidade = parseInt(prompt("Digite quantas pelucias desejas cadastrar"))
+    let indice = 0
+    let mickey = 0
+    let minnie = 0
+    let donald = 0
+    while (indice < quantidade) {
+        indice = indice + 1
+        let produto = prompt("Qual o persogagem [mickey/minnie/donald")
 
+        if (produto === "minnie" || produto === "Minnie") {
+            minnie = minnie + 1
+        }
+        else if (produto === "mickey" || produto === "Mickey") {
+            mickey = mickey + 1
+        }
+        else if (produto === "donald" || produto === "Donald") {
+            donald = donald + 1
+        }
+    }
+    alert("Pelucias do Mickey: " + mickey +
+        "\nPelucias da Minnie: " + minnie +
+        "\nPelucias do Donald: " + donald
+    )
+}
+/*
 31. Criar uma função exercicio31()
 - Solicitar a quantidade de clientes que irão responder a pesquisa
 - Para cada cliente, solicitar a forma de pagamento utilizada [CRÉDITO/DÉBITO/DINHEIRO]
@@ -706,7 +732,33 @@ function exercicio29() {
 - Contar quantos pagaram no débito
 - Contar quantos pagaram em dinheiro
 - Apresentar o total de clientes em cada forma de pagamento
+*/
+function exercicio31() {
+    let desejada = parseInt(prompt("Digite a quantidade de clientes"))
+    let indice = 0
+    let debito = 0
+    let credito = 0
+    let dinheiro = 0
 
+    while (indice < desejada) {
+        indice = indice + 1
+        let forma = prompt("Digite a forma de pagamento desejada [DEBITO/CREDITO/DINHEIRO")
+        if (forma === "debito") {
+            debito = debito + 1
+        }
+        else if (forma === "credito") {
+            credito = credito + 1
+        }
+        else if (forma === "dinheiro") {
+            dinheiro = dinheiro + 1
+        }
+    }
+    alert("Debito: " + debito +
+        "\nCrédito: " + credito +
+        "\nDinheiro: " + dinheiro
+    )
+}
+/*
 32. Criar uma função exercicio32()
 - Solicitar a quantidade de ingressos vendidos
 - Para cada ingresso, solicitar o tipo [INTEIRA/MEIA/CORTESIA]
@@ -714,7 +766,33 @@ function exercicio29() {
 - Contar quantos ingressos são MEIA
 - Contar quantos ingressos são CORTESIA
 - Apresentar o total de ingressos por tipo
+*/
+function exercicio32() {
+    let desejada = parseInt(prompt("Digite a qunatidade de ingressos vendidos"))
+    let indice = 0
+    let inteiro = 0
+    let meia = 0
+    let cortesia = 0
 
+    while (indice < desejada) {
+        indice = indice + 1
+        let ingresso = prompt("Qual o tipo de ingresso?")
+        if (ingresso === "inteiro") {
+            inteiro = inteiro + 1
+        }
+        else if (ingresso === "meia") {
+            meia = meia + 1
+        }
+        else if (ingresso === "cortesia") {
+            cortesia = cortesia + 1
+        }
+    }
+    alert("Inteira: " + inteiro +
+        "\nMeia: " + meia +
+        "\nCortesia: " + cortesia
+    )
+}
+/*
 33. Criar uma função exercicio33()
 - Solicitar a quantidade de lanches vendidos em um dia
 - Para cada lanche, solicitar o tipo [HAMBURGUER/PIZZA/HOTDOG]
@@ -722,7 +800,34 @@ function exercicio29() {
 - Contar quantos pedidos foram de pizza
 - Contar quantos pedidos foram de hotdog
 - Apresentar a quantidade de pedidos por tipo de lanche
+*/
+function exercicio33() {
+    let desejada = parseInt(prompt("Digite a quantidade de lanches"))
+    let indice = 0
+    let hamburguer = 0
+    let pizza = 0
+    let hotdog = 0
 
+    while (indice < desejada) {
+        indice = indice + 1
+        let lanche = prompt("Digite o tipo do lanche [ hamburguer / pizza / hotdog ]")
+
+        if (lanche === "hamburguer") {
+            hamburguer = hamburguer + 1
+        }
+        else if (lanche === "pizza") {
+            pizza = pizza + 1
+        }
+        else if (lanche === "hotdog") {
+            hotdog = hotdog + 1
+        }
+    }
+    alert("Hamburguer: " + hamburguer +
+        "\nPizza: " + pizza +
+        "\nHotdog: " + hotdog
+    )
+}
+/*
 34. Criar uma função exercicio34()
 - Solicitar a quantidade de livros que deseja cadastrar
 - Para cada livro, solicitar a categoria [FICÇÃO/ESTUDO/INFANTIL]
@@ -730,37 +835,174 @@ function exercicio29() {
 - Contar quantos livros são de Estudo
 - Contar quantos livros são Infantis
 - Apresentar a quantidade de livros em cada categoria
+*/
+function exercicio34() {
+    let desejada = parseInt(prompt("Digite a quantidade de livros"))
+    let indice = 0
+    let ficcao = 0
+    let estudo = 0
+    let infantil = 0
 
+    while (indice < desejada) {
+        indice = indice + 1
+        let livro = prompt("Digite o tipo do livro [ ficção / estudo / infantil ]")
+
+        if (livro === "ficção") {
+            ficcao = ficcao + 1
+        }
+        else if (livro === "estudo") {
+            estudo = estudo + 1
+        }
+        else if (livro === "infantil") {
+            infantil = infantil + 1
+        }
+    }
+    alert("Ficção: " + ficcao +
+        "\nEstudo: " + estudo +
+        "\nInfantil: " + infantil
+    )
+}
+/*
 35. Criar uma função exercicio35()
 - Solicitar o nome de personagens de anime até o usuário digitar sair
 - Cada vez que um nome for digitado, exibir uma mensagem com o personagem cadastrado
 - Ao digitar sair, encerrar o cadastro
 - Apresentar a quantidade total de personagens cadastrados
+*/
+function exercicio35() {
+    let nome = ""
+    let qunatidadePersonagens = 0
 
+    while( nome != "sair"){
+        nome = prompt("Digite o nome do personagem ou 'sair' para encerrar")
+
+        if(nome != "sair"){
+            qunatidadePersonagens = qunatidadePersonagens + 1
+        }
+    }
+}
+/*
 36. Criar uma função exercicio36()
 - Solicitar o nome de jogos favoritos até o usuário digitar sair
 - Contar quantos jogos foram cadastrados
 - Contar quantos jogos são do gênero RPG (quando o usuário digitar "RPG" em uma pergunta de gênero)
 - Ao final, apresentar a quantidade total de jogos e quantos são RPG
+*/
+function exercicio36(){
+    let nome = undefined
+    let quantidadeDeJogos = 0
+    let rpg = 0
 
+    while(nome != "sair"){
+        nome = prompt("Digite o nome do jogo ou 'sair' para encerrar")
+        
+
+        if(nome != "sair"){
+            quantidadeDeJogos = quantidadeDeJogos + 1
+
+            let genero = prompt("Digite o genero do seu jogo")
+        }
+
+        if(genero === "rpg" || genero === "RPG"){
+            rpg = rpg + 1
+        }
+    }
+    alert("Quantidade de jogos: " + quantidadeDeJogos +
+        "\nQuantidade de jogos rpg: " + rpg
+    )
+}
+/*
 37. Criar uma função exercicio37()
 - Solicitar o nome de heróis da Marvel até o usuário digitar sair
 - Para cada herói, solicitar também o nível de poder [BAIXO/MEDIO/ALTO]
 - Contar quantos heróis têm poder BAIXO, MEDIO e ALTO
 - Ao final, apresentar a quantidade em cada nível de poder
+*/
+function exercicio37(){
+    let nome = undefined
+    let baixo = 0
+    let medio = 0
+    let alto = 0
 
+    while(nome != "sair"){
+        nome = prompt("Digite o nome do herói ou 'sair' para encerrar")
+        if(nome != "sair"){
+            let poder = prompt("Digite o nivel de poder [BAIXO/MEDIO/ALTO]")
+
+            if(poder === "baixo"){
+                baixo = baixo + 1
+            }
+            else if(poder === "medio"){
+                medio = medio + 1
+            }
+            else if(poder === "alto"){
+                alto = alto + 1
+            }
+        }
+    }
+    alert("Herós com poder baixo: " + baixo +
+        "\nHeróis com poder medio: " + medio +
+        "\nHeróis com poder alto: " + alto
+    )
+}
+/*
 38. Criar uma função exercicio38()
 - Solicitar o nome de séries geeks (ex: Star Wars, Star Trek, etc.) até o usuário digitar sair
 - Para cada série cadastrada, solicitar uma nota de 0 a 10
 - Calcular a média das notas das séries informadas
 - Ao final, apresentar a quantidade de séries cadastradas e a média das notas
+*/
+function exercicio38(){
+    let nome = undefined
+    let soma = 0
+    let media = 0
+    let qunatidade = 0
+    
+    while(nome != "sair"){
+        nome = prompt("Digite o nome da série geek ou 'sair' para encerrar")
 
+        if(nome != "sair"){
+            qunatidade = qunatidade + 1
+            let nota = parseFloat(prompt("Digite uma nota de 0 a 10 para a série"))
+
+            soma = soma + nota
+        }
+    }
+    media = soma / qunatidade
+
+    alert("Quantidade de série: " + qunatidade +
+        "\nMédia das notas: " + media
+    )
+}
+/*
 39. Criar uma função exercicio39()
 - Solicitar o nome de consoles/jogos retrô (ex: SNES, Mega Drive) até o usuário digitar sair
 - Contar quantos itens foram cadastrados
 - Solicitar para cada item se o usuário já jogou [SIM/NÃO]
 - Ao final, apresentar quantos itens foram cadastrados e quantos o usuário já jogou
+*/
+function exercicio39(){
+    let nome = undefined
+    let quantidadeTotal = 0
+    let quantidadeJogados = 0
 
+    while(nome != "sair"){
+        nome = prompt("Digite o nome do jogo/console ou 'sair' para encerrar")
+        
+        if(nome != "sair"){
+            quantidadeTotal = quantidadeTotal + 1
+            let jogou = confirm("Você ja jogou este jogo/console")
+
+            if(jogou === true){
+                quantidadeJogados = quantidadeJogados + 1
+            }
+        }
+    }
+    alert("Quantidade de jogos: " + quantidadeTotal + 
+        "\nQuantidade já jogados: " + quantidadeJogados
+    )
+}
+/*
 40. Criar uma função exercicio40()
 - Solicitar a distância percorrida em km e o consumo de combustível em litros
 - Apresentar um MENU com as opções:
@@ -772,7 +1014,41 @@ function exercicio29() {
 - Enquanto a opção digitada for diferente de 10
 - Executar a opção escolhida e apresentar o resultado
 - Ao escolher 10 encerrar o programa
+*/
+function exercicio40(){
+    let menu = undefined
 
+    let distancia = parseFloat(prompt("Digite a distância percorrida em KM"))
+    let consumo  = parseFloat(prompt("Digite a quantidade de combustivel consumido em litros"))
+
+    while(menu != 10){
+        menu = parseInt(prompt(`
+            Menu:
+            1 - Calcular consumo médio (km/l)
+            2 - Calcular custo da viagem
+            3 - Alterar distância percorrida
+            4 - Alterar consumo em litros
+            10 - Sair`
+        ))
+        if(menu === 1){
+            let consumoMedio = distancia / consumo
+            alert("Consumo medio: " + consumoMedio + " km/l")
+        }
+        else if(menu === 2){
+            let precoGasolina = parseFloat(prompt("Digite o preço da gasolina"))
+            let custo = consumo * precoGasolina
+
+            alert("Custo da viagem: " + custo)
+        }
+        else if(menu === 3){
+            distancia = parseFloat(prompt("Digite a nova distancia"))
+        }
+        else if(menu === 4){
+            consumo = parseFloat(prompt("digite a nova qunatidade de combustivel consumido"))
+        }
+    }
+}
+/*
 41. Criar uma função exercicio41()
 - Solicitar o saldo inicial de uma conta bancária
 - Apresentar um MENU com as opções:
@@ -784,7 +1060,42 @@ function exercicio29() {
 - Executar a operação escolhida
 - No saque, não permitir sacar valor maior que o saldo
 - Ao final, apresentar o saldo final da conta
+*/
+function exercicio41(){
+    let menu = undefined
 
+    let saldo = parseFloat(prompt("Digite o saldo inicial"))
+
+    while(menu != 10){
+        menu = parseInt(prompt(`
+    Menu:
+    1 - Depositar
+    2 - Sacar
+    3 - Consultar saldo
+    10 - Sair
+            `))
+
+        if(menu === 1){
+            let deposito = parseFloat(prompt("Digite o valor que dejesa depositar"))
+            saldo = saldo + deposito
+        }
+        else if(menu === 2){
+            let saque = parseFloat(prompt("Digite o valor que deseja sacar"))
+            
+            if(saque > saldo){
+                alert("Você nao possui esse valor")
+            }
+            else{
+                saldo = saldo - saque
+            }
+        }
+        else if(menu === 3){
+            alert("Seu saldo é de: " + saldo)
+        }
+    }
+    alert("O saldo final: " + saldo)
+}
+/*
 42. Criar uma função exercicio42()
 - Apresentar um MENU de conversão de temperaturas:
     1 - Celsius para Fahrenheit
@@ -794,7 +1105,30 @@ function exercicio29() {
 - Solicitar a temperatura conforme a opção
 - Realizar a conversão e apresentar o resultado
 - Voltar ao MENU até o usuário escolher sair
+*/
+function exercicio42(){
+    let menu = undefined
 
+    while(menu != 10){
+        menu = parseInt(prompt(`
+            Menu:
+            1 - Celsius para Fahrenheit
+            2 - Fahrenheit para Celsius
+            10 - Sair`))
+
+            if(menu === 1){
+                let temperaturaC = parseInt(prompt("Digite a temperatura em Celsius"))
+                let fahrenheit = (temperaturaC * 9 / 5) + 32
+                alert("Temperatura: " + fahrenheit)
+            }
+            else if(menu === 2){
+                let temperaturaF = parseInt(prompt("Digite a temperatura em fahrenheit"))
+                let celsius = (temperaturaF - 32)*5/9
+                alert("Temperautura: " + celsius)
+            }
+    }
+}
+/*
 43. Criar uma função exercicio43()
 - Apresentar um MENU de calculadora de IMC:
     1 - Calcular IMC
